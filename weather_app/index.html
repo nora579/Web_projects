@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <main class="weather-container">
+    <header class="input">
+      <input type="text" class="city-in" placeholder="Search City...">
+      <button class="search-btn">
+        <span class="material-symbols-outlined">
+          search
+        </span>
+      </button>
+    </header>
+
+    <section class="weather-info" style="display: none;">
+      <div class="location-date">
+        <div class="location">
+          <span class="material-symbols-outlined">
+            location_on
+          </span>
+          <h4 class="country-name">Jakarta</h4>
+        </div>
+        <h5 class="current-date regular-txt">Wed, 07 Aug</h5>
+      </div>
+
+      <div class="weather-summary">
+        <img src="images/weather-icon.webp" width="120px" alt="" class="weather-summary-img">
+        <div class="weather-summary-info">
+          <h1 class="temp-txt">29 °C</h1>
+          <h3 class="condition-txt regular-txt">Clouds</h3>
+        </div>
+      </div>
+
+      <div class="weather-conditions">
+        <div class="condition-item">
+          <span class="material-symbols-outlined">
+            water_drop
+          </span>
+          <div class="condition-info">
+            <h5 class="regular-txt">Humidity</h5>
+            <h5 class="humidity-value">55%</h5>
+          </div>
+        </div>
+        <div class="condition-item">
+          <span class="material-symbols-outlined">
+            air
+          </span>
+          <div class="condition-info">
+            <h5 class="regular-txt">Wind Speed</h5>
+            <h5 class="wind-value">2 m/s</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast-items">
+        <div class="forecast-item">
+          <h5 class="forecast-date regular-txt">05 Aug</h5>
+          <img src="images/rain-storm-svgrepo-com (1).svg" width="45px" alt="" class="forecast-item" style="background-color: transparent;">
+          <h5 class="forecast-temp">29 °C</h5>
+        </div>
+        <div class="forecast-item">
+          <h5 class="forecast-date regular-txt">05 Aug</h5>
+          <img src="images/rain-storm-svgrepo-com (1).svg" width="45px" alt="" class="forecast-item" style="background-color: transparent;">
+          <h5 class="forecast-temp">29 °C</h5>
+        </div>
+        <div class="forecast-item">
+          <h5 class="forecast-date regular-txt">05 Aug</h5>
+          <img src="images/rain-storm-svgrepo-com (1).svg" width="45px" alt="" class="forecast-item" style="background-color: transparent;">
+          <h5 class="forecast-temp">29 °C</h5>
+        </div>
+        <div class="forecast-item">
+          <h5 class="forecast-date regular-txt">05 Aug</h5>
+          <img src="images/rain-storm-svgrepo-com (1).svg" width="45px" alt="" class="forecast-item" style="background-color: transparent;">
+          <h5 class="forecast-temp">29 °C</h5>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="search-city section-message">
+      <img src="images/and-cloud-computing-svgrepo-com.svg" alt="" class="message-img">
+      <div>
+        <h1>Search City</h1>
+        <h4 class="regular-txt">
+          Find out the weather conditions of the city
+        </h4>
+      </div>
+    </section>
+
+    <section class="not-found section-message" style="display: none;">
+      <img src="images/and-cancel-close-svgrepo-com.svg" alt="" class="message-img">
+      <div>
+        <h1>City Not Found</h1>
+        <h4 class="regular-txt">
+          Please check the spelling or try another city
+        </h4>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
